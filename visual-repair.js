@@ -25,4 +25,6 @@ document.addEventListener('DOMContentLoaded',()=>{
   }
   const status=document.getElementById('formStatus');
   if(status)status.textContent='';
+  const form=document.getElementById('inquiryForm');
+  if(form)form.addEventListener('submit',()=>setTimeout(()=>{const s=document.getElementById('formStatus');if(s)s.textContent='Thank you. Your enquiry has been received.'},760));
 });
